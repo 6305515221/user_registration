@@ -1,0 +1,20 @@
+{% extends 'dummy.html' %}
+{% block title %}
+<title>USER REGISTRATION</title>
+{% endblock %}
+{% block body_block %}
+
+<center>
+    <h1>WELCOME TO LOGIN FORM</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="username">USERNAME</label>
+        <input type="text" name="username"> <br>
+
+        <label for="password">PASSWORD</label>
+        <input type="password" name="password"> <br>
+
+        <input type="submit" value="SUBMIT">
+    </form>
+</center>
+{% endblock %}
